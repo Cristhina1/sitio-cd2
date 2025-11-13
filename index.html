@@ -1,97 +1,84 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Entrega Continua | Proyecto CD</title>
-<style>
-/* Estilos generales */
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #f4f7f6; /* Fondo suave */
-    color: #333;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    min-height: 100vh;
-    margin: 0;
-    padding: 2rem;
-    text-align: center;
-}
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Entrega Continua</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            text-align: center;
+            padding: 2rem;
+        }
 
-/* Contenedor principal para centrar el contenido */
-.container {
-    background-color: #ffffff;
-    padding: 3rem;
-    border-radius: 12px;
-    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
-    max-width: 90%;
-    width: 400px;
-}
-
-/* Encabezado */
-h1 {
-    color: #1e88e5; /* Azul primario */
-    font-size: 2.5rem;
-    margin-bottom: 0.5rem;
-    border-bottom: 3px solid #1e88e5;
-    padding-bottom: 10px;
-}
-
-/* Párrafo de versión */
-p {
-    font-size: 1.1rem;
-    color: #666;
-    margin-top: 0;
-    margin-bottom: 2rem;
-    font-weight: 500;
-}
-
-/* Imagen */
-img {
-    width: 150px;
-    height: 150px;
-    object-fit: cover;
-    border-radius: 50%; /* Borde circular para la imagen */
-    border: 5px solid #e0f7fa; /* Borde suave alrededor de la imagen */
-    margin-bottom: 2rem;
-    transition: transform 0.3s ease;
-}
-
-img:hover {
-    transform: scale(1.05); /* Efecto hover */
-}
-
-/* Botón */
-.btn {
-    padding: 0.75rem 1.5rem;
-    background: #4caf50; /* Verde vibrante para el botón */
-    color: white;
-    border: none;
-    border-radius: 8px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    transition: background-color 0.3s, transform 0.1s;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.btn:hover {
-    background: #388e3c; /* Verde más oscuro al pasar el ratón */
-    transform: translateY(-2px);
-}
-
-.btn:active {
-    transform: translateY(0);
-}
-</style>
+        .btn {
+            padding: 0.5rem 1rem;
+            background: #007bff;
+            color: white;
+            border: none;
+            border-radius: 4px;
+        }
+    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-<div class="container">
-    <h1>Proyecto CD - Equipo A 🦄</h1>
-    <p>Versión: <strong>1.0.0</strong></p>
-    <img src="https://wallpapers.com/images/featured/lindo-unicornio-te1z7u5l2uqsw72x.jpg" alt="Logo del equipo: Unicornio"  >
-    <button class="btn" onclick="alert('¡Hola desde CI/CD!')">🚀 Haz clic para probar 🚀</button>
-</div>
+    <h1>Proyecto CD - Equipo A</h1>
+    <p>Versión: 1.0.0</p>
+    <button class="btn" onclick="alert('¡Hola desde CI/CD!')">Haz clic</button>
+    <div class="container-ai">
+        <header class="header-ai">
+            <h1>El Futuro de la Salud: IA y Medicina Personalizada 🧬</h1>
+            <p class="subtitle-ai">Una mirada rápida a la Inteligencia Artificial en el diagnóstico y tratamiento.</p>
+        </header>
+    
+        <main>
+            <section class="trend-section">
+                <h2>¿Qué es la Medicina Personalizada con IA?</h2>
+                <p>
+                    La Inteligencia Artificial (IA) está transformando la atención médica, pasando de tratamientos de "talla única" a enfoques altamente individualizados. Mediante el análisis de datos genómicos, historiales médicos y estilos de vida, la IA es capaz de predecir riesgos de enfermedades, optimizar dosis de fármacos y personalizar planes de prevención y tratamiento, mejorando drásticamente la efectividad y los resultados para cada paciente.
+                </p>
+            </section>
+    
+            <div class="kpi-grid-ai">
+                <div class="kpi-card-ai diagnosis">
+                    <h3>Diagnóstico Temprano</h3>
+                    <p class="kpi-value">💡 Precisión IA</p>
+                    <p class="kpi-label">Detección de patrones sutiles en imágenes médicas (ej. Radiología).</p>
+                </div>
+                <div class="kpi-card-ai treatment">
+                    <h3>Tratamiento Único</h3>
+                    <p class="kpi-value">💊 Terapia Dirigida</p>
+                    <p class="kpi-label">Optimización de terapias oncológicas y dosificación de medicamentos.</p>
+                </div>
+                <div class="kpi-card-ai growth">
+                    <h3>Mercado Global de IA en Salud</h3>
+                    <p class="kpi-value">📈 +35% CAGR</p>
+                    <p class="kpi-label">Crecimiento Anual Compuesto proyectado hasta 2030.</p>
+                </div>
+            </div>
+    
+            <section class="image-section-ai">
+                <h2>El Algoritmo de la Vida: Genómica y Predicción</h2>
+                <p>La IA puede procesar secuencias genómicas en horas, algo que antes tomaba meses. Esta velocidad permite a los médicos identificar marcadores genéticos clave para una intervención preventiva, literalmente, reescribiendo la forma en que entendemos y gestionamos la salud.</p>
+                <div class="image-wrapper-ai">
+                    <img src="https://s1.significados.com/foto/medio-ambiente-og.jpg" alt="Visualización de datos genómicos analizados por Inteligencia Artificial">
+                    <img src="https://encolombia.com/wp-content/uploads/2017/10/Importancia-Medio-Ambiente-1024x574.jpg" alt="Modelo 3D de un cuerpo humano con visualizaciones de riesgos de salud predictivos">
+                </div>
+            </section>
+    
+            <div class="btn-container-ai">
+                <button class="btn-ai" onclick="alert('Explorando las últimas investigaciones en Oncología y Machine Learning...')">
+                    Ver Estudios de Caso
+                </button>
+            </div>
+        </main>
+    
+        <footer class="footer-ai">
+            <p>Análisis de Tendencias Tecnológicas | Fuente: Reporte Global de Salud Digital 2024</p>
+        </footer>
+    </div>
 </body>
+
 </html>
